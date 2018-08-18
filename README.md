@@ -3,7 +3,7 @@ FRIENDS
 
 > A blog for friends to share problems
 
-* Live at heroku :[friendzbook.herokuapp.com](https://friendzbook.herokuapp.com/)
+* Live at heroku : [friendzbook.herokuapp.com](https://friendzbook.herokuapp.com/)
 
 
 
