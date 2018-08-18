@@ -7,7 +7,7 @@ FRIENDS
 
 
 
-# Used Technologies
+### Used Technologies
 * Python
 * Django
 * SQLite3
