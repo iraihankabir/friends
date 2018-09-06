@@ -23,7 +23,7 @@ FRIENDS
 ## Installation of the project
 
 ## Create virtual environment and goto friends directory
-```python
+```bash
 virtualenv friends
 cd .\friends\
 ```
