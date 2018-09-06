@@ -30,17 +30,17 @@ cd .\friends\
 * copy the project and paste in friends directory
 
 ## Activate virtualenv and install reequirements.txt
-```python
+```bash
 .\Scripts\activate
 python -m pip install -r .\requirements.txt
 ```
 ## goto src directory and make db ready
-```python
+```bash
 cd .\src\
 .\manage.py migrate
 ```
 ## Run dev server
-```python
+```bash
 .\manage.py runserver 8888
 ```
 * now goto http://127.0.0.1:8888/
