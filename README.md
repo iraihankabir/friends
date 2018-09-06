@@ -26,7 +26,7 @@ FRIENDS
 * Google Drive API
 
 
-## Installation of the project
+## Installation
 
 ### Create virtual environment and goto friends directory
 ```bash
