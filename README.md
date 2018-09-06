@@ -17,5 +17,30 @@ FRIENDS
 * JavaScript
 * jQuery
 * Bootstrap
+* Google Drive API
 
 
+## Installation of the project
+
+## Create virtual environment and goto friends directory
+```python
+virtualenv friends
+cd .\friends\
+```
+* copy the project and paste in friends directory
+
+## Activate virtualenv and install reequirements.txt
+```python
+.\Scripts\activate
+python -m pip install -r .\requirements.txt
+```
+## goto src directory and make db ready
+```python
+cd .\src\
+.\manage.py migrate
+```
+## Run dev server
+```python
+.\manage.py runserver 8888
+```
+* now goto http://127.0.0.1:8888/
