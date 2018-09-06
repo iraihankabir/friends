@@ -54,7 +54,7 @@ cd .\src\
 ## Screenshots
 
 ### Homepage
-![image[https://github.com/iraihankabir/friends/blob/master/screenshots/header.png)
+![image](https://github.com/iraihankabir/friends/blob/master/screenshots/header.png)
 
 ![image](https://github.com/iraihankabir/friends/blob/master/screenshots/index%20page.png)
 
