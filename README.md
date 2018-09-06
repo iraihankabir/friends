@@ -11,7 +11,7 @@ FRIENDS
 * Login/Registration
 * Like/Comment
 * Search
-* E-mailing
+* Send E-mail
 
 ## Used Technologies
 * Python
