@@ -22,6 +22,7 @@ FRIENDS
 * CSS
 * JavaScript
 * jQuery
+* Ajax
 * Bootstrap
 * Google Drive API
 
