@@ -20,7 +20,7 @@ class Account(models.Model):
     height_field    = models.IntegerField(default=0)
     width_field     = models.IntegerField(default=0)
 
-    is_active       = models.BooleanField(default=False, blank=True)
+    is_active       = models.BooleanField(default=True)
 
     activation_code = models.CharField(max_length=10, blank=True, null=True)
     activation_time = models.DateTimeField(auto_now=False, auto_now_add=True)

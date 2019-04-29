@@ -28,7 +28,6 @@
 						<h3 class="blog_post_title"><a href="{{ post.account.get_public_profile_link}}">{{ post.account.user.get_full_name }}</a></h3>
 						<div class="blog_post_meta">
 							<span class="blog_post_author">Edited: {{ post.updated|date }}</span>
-							<span class="blog_post_category">{{post.likes}} likes</span>
 							<span class="blog_post_comments">{{post.comments}} comments</span>
 						</div>
 						{% if post.drive_photo1_link != '' %}
@@ -50,27 +49,9 @@
 							<p>{{ post.content|safe }}</p>
 						</div>
 						<hr>
-
-						{% if request.user.is_authenticated %}
-						<div class="m-4 mb-0 text-center">
-							{% if liked %}
-								<form method="post" action="{% url 'posts:like' post.slug %}">{% csrf_token %}
-									<button class="mr-5 p-2" style="border-radius: 10px;">
-										<img src="{% static 'images/liked.png' %}" style="height: 30px; width: 30px;">
-									</button>
-								</form>
-							{% else %}
-							<form method="post" action="{% url 'posts:like' post.slug %}">{% csrf_token %}
-								<button class="mr-5 p-2" style="border-radius: 10px">
-									<img src="{% static 'images/like.png' %}" style="height: 30px; width: 30px;">
-								</button>
-							</form>
-							{% endif %}
-						</div>
-						{% endif %}
 						<!-- COMMENT FORM -->
 						{% if request.user.is_authenticated %}
-							<div class="blog_post_reply mt-0 ">
+							<div class="blog_post_reply mt-5 ">
 								<form id="reply_form" action="{% url 'comments:create' %}" method="post">{% csrf_token %}
 									<input type="hidden" name="slug" value="{{ post.slug }}">
 									<div>

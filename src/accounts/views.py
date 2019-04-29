@@ -282,6 +282,7 @@ def userCreate_view(request):
             body    = "Hello " + user.first_name + ", your account has been created successfully. We want to provide some recovery codes for you for future usage. Activation code: " + str(account.activation_code) + " Password recovery code: " + str(account.forgotpass_code) + " Account recovery code: " + str(account.recover_code) + ". Don't forget to save these codes. Thanks from FRIENDS community."
             try:
                 send_mail(subject, body, settings.EMAIL_HOST_USER, [user.email], fail_silently=True)
+                print("Email has been sent")
             except:
                 pass
             msg = "Congrats! You are now registered. Please check your email to <a href='/accounts/activate/?email="+user.email+"' class='alert-link'>confirm</a> your account."
