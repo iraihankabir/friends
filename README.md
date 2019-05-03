@@ -59,8 +59,6 @@ cd .\src\
 
 ![image](https://github.com/iraihankabir/friends/blob/master/screenshots/index%20page.png)
 
-![image](https://github.com/iraihankabir/friends/blob/master/screenshots/footer.png)
-
 
 ### Login - Registration
 
